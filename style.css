@@ -7,14 +7,14 @@ body{
 
 section{
     flex: 1;
-    /* height: 90vh; */
+    /* height: 100vh; */
 }
 
 .hero-section{
     display: flex;
     justify-content: space-evenly;
     background-color: #e0ecfa;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .hero-left-sec{
@@ -252,7 +252,76 @@ section{
     object-fit: cover;
 }
 
+.sixth-sec{
+    background-color: #e7531c;
+    height: 100vh;
+}
 
+.sixth-hdg{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
+.sixth-content{
+    background-color: white;
+    margin: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* .sixth-left-sec{
+flex: 1;
+} */
+
+.sixth-left-sec ul li{
+    font-size: 2em;
+    color: #254b83;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.sixth-right-sec{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.sixth-right-sec img{
+    width: 400px;
+    height: 400px;
+}
+
+.seven-section{
+    background-color:#e0ecfa ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seven-left-sec span{
+    font-size: 4em;
+    color: #254b83;
+}
+
+.seven-left-sec p{
+    font-size: 1.5em;
+    color: #254b83;
+}
+
+.seven-right-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seven-img-column img{
+   width: 120px;
+   height: 120px;
+   padding: 5px;
+}
 
 
 
@@ -318,6 +387,29 @@ section{
         .fifth-left-sec{
             text-align: center;
         }
+
+                .sixth-content {
+                    flex-direction: column;
+                }
+
+                .sixth-left-sec ul li{
+                    font-size: 0.8em;
+                }
+
+                .sixth-right-sec img{
+                    width: 300px;
+                    height: 300px;
+                }
+
+                                .seven-img-column img {
+                                    width: 100px;
+                                    height: 100px;
+                                
+                                }
+
+                                .seven-section{
+                                    flex-direction: column;
+                                }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -362,4 +454,12 @@ section{
    .fifth-sec{
     flex-direction: column;
    }
+
+   .sixth-content{
+    flex-direction: column;
+   }
+
+ .seven-section {
+     flex-direction: column;
+ }
 }
